@@ -46,7 +46,7 @@ try {
 
     $projects = [];
     while ($row = $projects_result->fetch_assoc()) {
-        // Convert tags string to array
+        // Convert tags string to the array
         if ($row['tags']) {
             $row['tags_array'] = array_map('trim', explode(',', $row['tags']));
         } else {

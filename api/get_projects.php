@@ -12,7 +12,7 @@ $offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
 $count_only = isset($_GET['count_only']) && $_GET['count_only'] === 'true';
 
 try {
-    // Build query with filters
+    // Build query with the filters
     $where_conditions = ["p.status = 'published'"];
     $params = [];
     $param_types = "";

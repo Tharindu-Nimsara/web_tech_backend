@@ -2,7 +2,7 @@
 require_once("cors_headers.php");
 require_once("../config/db.php");
 
-// Get project ID from URL parameter
+// Get project ID from the URL parameter
 $project_id = $_GET['id'] ?? '';
 
 if (empty($project_id)) {
@@ -11,7 +11,7 @@ if (empty($project_id)) {
 }
 
 try {
-    // Get project details with author information
+    // Get project details with relevant author information
     $query = "
         SELECT 
             p.project_id,

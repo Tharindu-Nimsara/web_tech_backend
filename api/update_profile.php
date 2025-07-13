@@ -50,7 +50,7 @@ if (isset($_FILES['profile_pic']) && $_FILES['profile_pic']['error'] === UPLOAD_
 }
 
 try {
-    // Update profile data
+    // Update the profile data
     if ($photo_path) {
             // Update with photo
             $stmt = $conn->prepare("UPDATE student SET bio = ?, skills = ?, github_link = ?, website_link = ?, phone_number = ?, location = ?, study_year = ?, photo = ? WHERE student_id = ?");

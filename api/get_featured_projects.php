@@ -3,7 +3,7 @@ require_once("cors_headers.php");
 require_once("../config/db.php");
 
 try {
-    // Get latest 3 projects for featured section
+    // Get latest 3 projects for the featured section
     $query = "
         SELECT 
             p.project_id,
